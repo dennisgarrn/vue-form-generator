@@ -30,7 +30,7 @@ export default {
           {
             id: 'checkbox',
             type: 'checkbox',
-            value: 'this is an inputfield 2',
+            value: 'this is a checkbox',
             label: 'my first checkbox'
           }
         ]

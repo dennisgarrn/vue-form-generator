@@ -1,6 +1,29 @@
 # vue-form-generator
 Creates a vue form (really basic) out of an JSON object.
 
+## Example form
+```json
+myForm: {
+    name: 'myForm',
+    action: 'myAction',
+    method: 'POST',
+    fields: [
+        {
+            id: 'name',
+            type: 'input',
+            value: 'this is an inputfield',
+            label: 'Name',
+        },
+        {
+        id: 'checkbox',
+        type: 'checkbox',
+        value: 'this is a checkbox',
+        labelbel: 'my first checkbox'
+        }
+    ]
+}
+```
+
 ## Project setup
 ```
 npm install
