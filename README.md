@@ -2,7 +2,7 @@
 Creates a vue form (really basic) out of an JSON object.
 
 ## Example form
-```json
+```javascript
 myForm: {
     name: 'myForm',
     action: 'myAction',
