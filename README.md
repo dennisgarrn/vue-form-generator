@@ -1,4 +1,5 @@
-# vue-form
+# vue-form-generator
+Creates a vue form (really basic) out of an JSON object.
 
 ## Project setup
 ```

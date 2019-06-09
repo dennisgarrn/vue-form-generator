@@ -1,9 +1,10 @@
 <template>
-    <form :name="form.name">
+    <form :name="form.name" :action="form.action" :method="form.method">
         <div v-for="(field, index) in form.fields" :key="index">
             <baseInput v-if="field.type == 'input'" :data="field" />
             <baseCheckbox v-if="field.type == 'checkbox'" :data="field" />
-        </div>   
+        </div>
+        <input type="submit" value="submit" />
     </form>
 </template>
 

@@ -13,6 +13,8 @@ export default {
     return {
       myForm: {
         name: 'myForm',
+        action: '',
+        method: 'POST',
         fields: [
           {
             id: 'name',
