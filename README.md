@@ -15,10 +15,10 @@ myForm: {
             label: 'Name',
         },
         {
-        id: 'checkbox',
-        type: 'checkbox',
-        value: 'this is a checkbox',
-        labelbel: 'my first checkbox'
+            id: 'checkbox',
+            type: 'checkbox',
+            value: 'this is a checkbox',
+            labelbel: 'my first checkbox'
         }
     ]
 }
