@@ -11,14 +11,16 @@ myForm: {
         {
             id: 'name',
             type: 'input',
-            value: 'this is an inputfield',
+            placeholder: 'this is an inputfield',
+            value: '',
             label: 'Name',
         },
         {
             id: 'checkbox',
             type: 'checkbox',
-            value: 'this is a checkbox',
-            labelbel: 'my first checkbox'
+            placeholder: 'this is a checkbox',
+            value: '',
+            labelbel: 'my first checkbox',
         }
     ]
 }
@@ -31,7 +33,7 @@ npm install
 
 ### Compiles and hot-reloads for development
 ```
-npm run serve
+npm run dev
 ```
 
 ### Compiles and minifies for production
@@ -39,15 +41,7 @@ npm run serve
 npm run build
 ```
 
-### Run your tests
-```
-npm run test
-```
-
 ### Lints and fixes files
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
