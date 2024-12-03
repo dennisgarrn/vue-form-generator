@@ -1,46 +1,54 @@
 <template>
   <div id="app" class="container">
-    <baseForm :form="myForm" />
+    <BaseForm v-bind="myForm" />
   </div>
 </template>
 
-<script>
-import baseForm from '@/components/form.vue'
+<script setup lang="ts">
+import BaseForm from '@/components/BaseForm.vue';
 
-export default {
-  name: 'app',
-  data() {
-    return {
-      myForm: {
-        name: 'myForm',
-        action: '',
-        method: 'POST',
-        fields: [
-          {
-            id: 'name',
-            type: 'input',
-            value: 'this is an inputfield',
-            label: 'Name',
-          },
-          {
-            id: 'address',
-            type: 'input',
-            value: 'this is an inputfield 2',
-          },
-          {
-            id: 'checkbox',
-            type: 'checkbox',
-            value: 'this is a checkbox',
-            label: 'my first checkbox'
-          }
-        ]
-      }
-    }
-  },
-  components: {
-    baseForm,
-  }
+export interface Field {
+  id: string;
+  type: 'input' | 'checkbox';
+  value: string;
+  placeholder?: string;
+  label?: string;
 }
+
+export interface Form {
+  name: string;
+  action: string;
+  method: 'GET' | 'POST';
+  fields: Field[];
+}
+
+const myForm: Form = {
+  name: 'myForm',
+  action: '',
+  method: 'POST',
+  fields: [
+    {
+      id: 'name',
+      type: 'input',
+      placeholder: 'this is an inputfield',
+      value: '',
+      label: 'Name',
+    },
+    {
+      id: 'address',
+      type: 'input',
+      placeholder: 'this is an inputfield 2',
+      value: '',
+    },
+    {
+      id: 'checkbox',
+      type: 'checkbox',
+      placeholder: 'this is a checkbox',
+      value: '',
+      label: 'my first checkbox'
+    }
+  ]
+};
 </script>
 
 <style>
